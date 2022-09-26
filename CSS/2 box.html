@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+                p {
+                  background-color: tomato;
+                  width: 250px;
+                  height: 200px;
+                  text-align: right;
+                  /* 바깥 여백 */
+                  margin: 50px 20px 10px 5px;
+                  /* 바깥 여백 개별지정 */
+                  margin-left: 100px;
+                  /* 가로방향으로 가운데로 보내는 기법 */
+                  margin: 0 auto;
+
+                }
+                p img {
+                  width: "100px";
+                  height: "50%"";
+                }
+
+                a {
+                  background-color: yellow;
+                  width: 200px;
+                  height: 200px;
+                  display: inline-block;
+                }
+              div {width: 100px;
+              height: 100px;
+          background: green;
+          margin-top: 50px;
+        color: white;
+      /* 안쪽여백 너비에 영향을 미친다.(늘어남) */
+      padding: 20px 30px 5px 10px;
+      /* border: 5px dashed black; */
+      border-width: 5px;
+      border-style: dashed;
+      border-color: black;
+      box-sizing: border-box;
+      /* overflow: scroll; */
+      overflow-x: scroll;
+      overflow-y: scroll;
+                    }
+                    section{background: red; width: 300px;}
+    </style>
+  </head>
+  <body>
+    <p>
+      p 태그는 블록 레벨 요소입니다.
+      <img src="../assets/eab3a0ec9691ec9db4-580x387.jpg" alt="" width="50px" />
+    </p>
+    <a href="">a태그는 인라인 요소입니다.</a>
+    <a href="">인라인 요소</a>
+
+    <div>
+      <section>가나다라마바사아자차카타파하</section>
+    </div>
+  </body>
+</html>
