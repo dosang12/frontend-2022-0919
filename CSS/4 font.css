@@ -2,26 +2,52 @@ html {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 12px;
 }
-/* 글씨체를 지정. 지정한 폰트가 없을시 다음 폰트를 적용. */
+/* 글씨체를 지정. 앞 순서부터 지정한 폰트가 없을시 다음 폰트를 적용. */
 
 body {
   font-size: 14px;
 }
 
 p {
+  /* p 안의 글씨 크기 */
+  width: 200px;
+
+  /* rem 이란 root에(12px) 지정된 크기에 대한 비율 2rem=두배*/
   font-size: 2rem;
-  font-size: 2em;
+
+  /* em 이란 부모 요소의 글씨 크기에 대한 비율 */
+  font-size: 1.4em;
+
+  /* weight 글자의 굵기. 기본이 400정도. 100~900 사이의 숫자. 100단위. */
+  /* font-weight: bold; 정해진 키워드가 있다. */
   font-weight: 700;
+
+  /* 글씨의 가로 정렬. 블록요소에만 해당된다. */
   text-align: center;
+
+  /* word spacing - 자간 */
+  word-spacing: 1em;
+
+  /* letter spacing - 줄간격 */
+  letter-spacing: 1em;
+
+  text-transform: capitalize;
+  /* 글자 변형. 다 대문자, 다 소문자 가능 */
 }
-/* p 안의 글씨 크기 */
-/* rem 이란 root에(12px) 지정된 크기에 대한 비율 2rem=두배*/
-/* em 이란 부모 요소의 글씨 크기에 대한 비율 */
-/* weight 글자의 굵기. 기본이 400정도. 100~900 사이의 숫자. 100단위. */
-/* font-weight: bold; 정해진 키워드가 있다. */
-/* 글씨의 가로 정렬. 블록요소에만 해당된다. */
 
 span {
   text-decoration: line-through dashed 4px orange;
   /* underline, overline 글씨를 꾸미는 선을 긋는다. 선의 위치,종류,두께,색상 지정가능. */
+}
+
+/* 줄간격 */
+p {
+  line-height: 50px;
+}
+.lineBox {
+  width: 300px;
+  height: 50px;
+  border: 3px solid black;
+  line-height: 50px;
+  text-align: center;
 }
