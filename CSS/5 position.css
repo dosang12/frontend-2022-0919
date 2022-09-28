@@ -10,6 +10,7 @@ body {
   padding: 20px;
   overflow: scroll;
 }
+/* relative - 상대좌표. */
 
 .container .inner {
   height: 1000px;
@@ -46,7 +47,7 @@ body {
   left: 300px;
   background-color: green;
 }
-/* fixed 창 화면에 위치가 고정됨. */
+/* fixed 브라우저 화면에 위치가 고정됨. */
 
 .container .box:nth-child(4) {
   background-color: brown;
@@ -54,3 +55,4 @@ body {
   top: 10px;
   z-index: 101;
 }
+/* z-index - 숫자가 높을수록 중첩된 컨텐츠가 위로 표시됨. */

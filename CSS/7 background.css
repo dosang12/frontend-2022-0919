@@ -1,0 +1,62 @@
+.box {
+  width: 500px;
+  height: 300px;
+  border: 3px solid black;
+  background-color: rgba(0, 0, 0, 0.4);
+  /* 빨 초 파 색상순. 마지막은 투명도. */
+  background-image: url(/assets/patton.jpg);
+  /* opacity: 0.5; */
+  /* 요소의 투명도 조절. */
+  background-size: cover;
+  background-size: contain;
+  background-size: 50% 50%;
+  /* 사이즈는 가로값 세로값. %도 가능-부모 가로값 세로값 기준 */
+  background-repeat: no-repeat;
+  /* 반복 제거. x축 반복, y축 반복 */
+
+  background-position: center right;
+  /* 요소내 배경의 위치. */
+  background-position: 50% 20%;
+  /* % 개념으로도 가능 px 개념도 가능 */
+  background-position: bottom 100px right 30px;
+}
+
+.back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  background: #0000ff;
+  z-index: -1;
+  /*  */
+}
+
+.container {
+  width: 500px;
+  height: 300px;
+  border: 5px dashed black;
+  margin-top: 30px;
+  padding: 10px;
+  background-image: url(/assets/donrom.jfif);
+  background-origin: padding-box;
+  /* 배경의 시작 지점을 설정 기본값은 padding 값  */
+  /* background-clip: content-box;  */
+  /* 배경이 잘리는 기준 */
+  background-size: 100px 100px;
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  /* 뷰포트 기준으로 고정이됨.  */
+  overflow: scroll;
+}
+
+.container02 {
+  width: auto;
+  height: 200px;
+  border: 3px solid black;
+  background-image: url(/assets/getty_cats.png);
+  /* background-attachment: fixed; */
+  background-size: 300px;
+  background-repeat: no-repeat;
+  background-position: top right;
+}

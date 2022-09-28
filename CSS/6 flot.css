@@ -1,0 +1,66 @@
+.clearFix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.container {
+  /* text size: 0; */
+}
+
+.container img {
+  float: right;
+  height: 150px;
+}
+
+.container img:nth-child(2) {
+  float: left;
+  height: 100px;
+}
+
+.container p {
+  text-align: justify;
+  clear: both;
+}
+
+.wrapper {
+  border: 3px solid black;
+}
+
+.wrapper::after {
+  content: "";
+  clear: left;
+  display: block;
+}
+
+.box {
+  background-color: red;
+  float: left;
+  /* display: inline-block; */
+  width: 100px;
+  height: 100px;
+}
+
+span {
+  background-color: blue;
+  width: 100px;
+  height: 100px;
+  float: right;
+}
+
+.bigbox {
+  width: 150px;
+  height: 150px;
+  background-color: black;
+  clear: left;
+  color: white;
+}
+
+header ul li {
+  float: left;
+  list-style: none;
+}
+
+ul {
+  padding: 0;
+}
