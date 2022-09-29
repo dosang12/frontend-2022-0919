@@ -1,0 +1,123 @@
+/* body {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  text-align: center;
+  background-color: gray;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+li:hover {
+  background-color: white;
+} */
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ내가 한 방법ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+
+/* 나열하기 위해선 inline block, float 두 가지. */
+#header {
+  background-color: gray;
+  position: relative;
+}
+
+#gnb {
+  text-align: center;
+  font-size: 0;
+}
+
+#gnbList {
+  display: inline-block;
+  font-size: 1rem;
+}
+
+#gnbList li {
+  float: left;
+}
+
+#gnbList li a {
+  display: inline-block;
+  padding: 10px 0;
+  width: 100px;
+}
+
+#gnbList li a:hover {
+  background-color: #bbb;
+  color: white;
+}
+
+#Logo {
+  position: absolute;
+  left: 20px;
+  font-size: 1rem;
+  transform: translateY(50%);
+}
+/* 
+#Yeji {
+  position: relative;
+  text-align: center;
+}
+
+.container .box {
+  display: inline-block;
+  margin-top: 100px;
+  width: 150px;
+  height: 200px;
+  border: 3px solid red;
+}
+.box {
+  margin: 5px;
+  text-align: center;
+} */
+
+/* 나열하는 방법 . 
+1. 인라인블록. 텍스트얼라인
+2. 플롯 마진  */
+
+.banner {
+  margin-top: 70px;
+  text-align: center;
+}
+.banner h2 {
+  margin-bottom: 40px;
+}
+
+.bannerList {
+  width: 500;
+  margin: 0 auto;
+}
+
+.bannerList li {
+  width: 150px;
+  height: 200px;
+  border: 3px solid black;
+  display: inline-block;
+  margin: 5px;
+}
+
+.bannerList li:nth-child(2) {
+  margin: 0 10px;
+}
+
+.bannerlist li {
+  background-image: url(/assets/donrom.jfif) center/cover;
+}
+
+.bannerList li a {
+  display: block;
+  height: 100%;
+}
+
+.bannerList li:hover {
+  background-size: auto 120%;
+}
