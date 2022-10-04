@@ -1,0 +1,78 @@
+.container {
+  width: 500px;
+  padding: 20px;
+  border: 3px solid black;
+  perspective: 300px;
+  /*perspective 단위가 클수록 변화가 적다.  */
+}
+.box {
+  width: 100px;
+  height: 100px;
+  margin: 30px 0;
+  background: red;
+
+  color: white;
+  text-align: center;
+  line-height: 100px;
+
+  transition-duration: 1s; /* 변하는 시간. 몇 초에 걸쳐서 변할지 지정. */
+  transition-delay: 0.25s; /*지연시간을 지정. x초 후에 변화.*/
+  transition-property: all; /*트랜지션을 적용할 속성을 지정 width만 적용됨. */
+  transition-timing-function: linear; /*값의 변화폭을 지정*/
+
+  /* transition: width 1s 0.25s linear, transfrom 3s; */
+  /* 단축속성. 위와 같은 의미의 순서. */
+  transform: all 0.25s;
+}
+
+.translate .x:hover {
+  width: 200px;
+  background: black;
+  transform: translateX(20px);
+}
+
+.translate .y:hover {
+  transform: translateY(20px);
+}
+
+.translate .xy:hover {
+  transform: translate(20px, 20px);
+}
+/* 좌표를 하나만 적어두면 기본적으로 x축만 적용된다. 두번째는 입력수는 y축으로 적용된다. 
+   scale 도 동일한 원리로 적용된다. */
+/* transform-origin:  변형의 축을 지정한다. */
+
+.translate .z:hover {
+  transform: translateZ(100px);
+}
+
+.scale .x:hover {
+  transform: scalex(1.2);
+  transform-origin: bottom; /* transform-origin:  변형의 축을 지정한다. */
+}
+/* scale : 요소를 확대 혹은 축소 시킨다. 요소 내부의 컨텐츠 전체 적용. */
+.scale .y:hover {
+  transform: scaley(-80%);
+  /* - 값은 상하반전, 좌우반전을 일으킨다. */
+}
+
+.scale .xy:hover {
+  transform: scale(1.5);
+}
+/* 값을 하나만 넣으면 둘다 같은 값이 적용된다. */
+
+.rotate .x:hover {
+  transform: rotate(30deg);
+}
+
+.skew .x:hover {
+  transform: skewX(10deg);
+}
+
+.skew .y:hover {
+  transform: skewY(20deg);
+}
+
+.skew .xy:hover {
+  transform: skew(20deg, 30deg);
+}

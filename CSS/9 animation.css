@@ -1,0 +1,62 @@
+.container {
+  width: 500px;
+  height: 300px;
+  border: 3px solid black;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-image: url(../assets/getty_cats.png);
+  background-size: 100px 100px;
+  transition: 0.25s;
+
+  animation: moveX; /*실행할 애니메이션을 지정*/
+  animation-duration: 0.5s; /*애니메이션이 작동되는 시간*/
+  animation-iteration-count: infinite; /*애니메이션 반복 횟수를 지정한다.*/
+  animation-direction: alternate-reverse; /*애니메이션 방향을 지정한다.*/
+  animation-fill-mode: backwards; /*애니메이션 프레임 유지 여부*/
+  animation-delay: 1s;
+  animation-timing-function: steps(4); /*몇단계에 걸쳐서 진행되는지.*/
+  /* animation-play-state: running;  - 애니메이션 재생여부를 지정한다.*/
+}
+
+.box:hover {
+  width: 200px;
+}
+
+@keyframes moveX {
+  from {
+    background-image: url(../assets/eab3a0ec9691ec9db4-580x387.jpg);
+    background-size: 100px 100px;
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(50px);
+  }
+  100% {
+    transform: translateX(80px);
+  }
+}
+
+.btnchat {
+  width: 50px;
+  height: 50px;
+  border: 3px solid black;
+  border-radius: 50%;
+  font-size: 3px;
+  text-align: center;
+  line-height: 1;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+
+  animation: sildup 0.5s;
+}
+
+@keyframes sildup {
+  /* 초기값 셋팅이 필요없는 경우 from  생략가능 */
+  to {
+    transform: translateY(50px);
+  }
+}

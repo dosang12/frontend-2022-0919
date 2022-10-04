@@ -62,7 +62,7 @@ li:hover {
   font-size: 1rem;
   transform: translateY(50%);
 }
-/* 
+
 #Yeji {
   position: relative;
   text-align: center;
@@ -78,13 +78,13 @@ li:hover {
 .box {
   margin: 5px;
   text-align: center;
-} */
+}
 
 /* 나열하는 방법 . 
 1. 인라인블록. 텍스트얼라인
 2. 플롯 마진  */
 
-.banner {
+/* .banner {
   margin-top: 70px;
   text-align: center;
 }
@@ -120,4 +120,4 @@ li:hover {
 
 .bannerList li:hover {
   background-size: auto 120%;
-}
+} */
