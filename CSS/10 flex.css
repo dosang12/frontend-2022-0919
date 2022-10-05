@@ -1,0 +1,72 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0;
+}
+
+h1 {
+  width: 100px;
+}
+
+button {
+  width: 100px;
+}
+
+.container {
+  display: flex; /*나열하려는 용도*/
+  border: 3px solid black;
+  /* flex-direction: column; 기본값은 row 다. */
+  /*-reverse 를 주게되면 반대 방향으로 주축이 변경된다.*/
+  justify-content: flex-start; /*주축에 대한 방향을 지정.*/
+
+  width: 700px;
+  /* flex-wrap: wrap-reverse; */
+  /*교차축에 대한 정렬 방법 지정.*/
+}
+.box {
+  /* justify-content: center;
+  align-items: center; */
+  /* width: 100px;
+  height: 100px; */
+  background-color: red;
+  /* flex-basis: 200px; 주축에 대한 아이템의 크기 */
+  /* flex-grow: 1; */
+  /* flex-shrink: 4; wrap이 있으면 제대로 작동하지않음. */
+}
+.box:nth-child(1) {
+  flex: 1;
+}
+
+.box:nth-child(2) {
+  /* flex-grow: 1; */
+  /* flex-basis: 100px; */
+  /* flex-shrink: 1; */
+  flex: 2;
+  background-color: blue;
+}
+
+/*flex: 0 1 auto; flex 기본값.*/
+/* display : flex; - 플렉스박스로 바뀌면서 자식요소를 나열하게된다. */
+/* flex direction - 주축 방향 지정.기본은 가로row 리버스 세로 선택 가능 */
+/*  justify-content 주축에 대한 정렬 */
+/* align-items 교차축에 대한 정렬 */
+/* align-self 교차축에 아이템 자신에 대한 정렬, 개별적인 정렬 */
+
+/* flex-wrap 아이템들의 크기가 컨테이너 크기를 넘을때 줄바꿈의 여부를 결정 */
+
+/* 아이템에 쓰는 속성 - 반응형 웹에 사용
+flex-basis 주축에 대한 최소크기
+flex-grow 여백을 가져가는 비율 
+flex-shrink 공간이 모자랄때 줄이는 비율 
+flex : grow shrink basis 순으로 지정하는 단축속성.*/
+
+/* ex flex : n; >> grow는 n으로 지정하고 shrink 1, basis는 0  */
+/* flex를 모든 아이템에 동일하게 1주면 컨텐츠 너비 상관없이 똑같은 크기로 지정 */
+/* flex를 특정 요소에만 1주면 컨테이너의 남은 여백을 특정 요소만 가져간다. */
+
+/* 과제  */
+/* 
+1. 레이아웃 페이지 flex로 대체하기. 
+2. 유튜브 input 태그처럼 자동으로 늘어나는 input태그 만들기
+   input 옆에 버튼이 있는데 크기에 따라 input만 늘어나게. */

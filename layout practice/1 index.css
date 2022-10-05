@@ -29,6 +29,8 @@ li:hover {
 #header {
   background-color: gray;
   position: relative;
+  overflow: hidden;
+  animation: show 0.4s 1s backwards;
 }
 
 #gnb {
@@ -49,6 +51,7 @@ li:hover {
   display: inline-block;
   padding: 10px 0;
   width: 100px;
+  transition: 0.25s;
 }
 
 #gnbList li a:hover {
@@ -78,6 +81,41 @@ li:hover {
 .box {
   margin: 5px;
   text-align: center;
+  background-image: url(/assets/getty_cats.png);
+  background-size: 150px 200px;
+}
+
+.btnchat {
+  width: 50px;
+  height: 50px;
+  border: 3px solid black;
+  border-radius: 50%;
+  font-size: 3px;
+  text-align: center;
+  line-height: 1;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  animation: slidup 0.25s;
+}
+
+@keyframes slidup {
+  from {
+    opacity: 0;
+    bottom: 10px;
+  }
+  to {
+    bottom: 30px;
+  }
+}
+
+@keyframes show {
+  from {
+    max-height: 0;
+  }
+  to {
+    max-height: 50px;
+  }
 }
 
 /* 나열하는 방법 . 
@@ -103,6 +141,9 @@ li:hover {
   border: 3px solid black;
   display: inline-block;
   margin: 5px;
+  background: center/ 100% no-repeat;
+  transition: 0.25s
+  background-size: auto 100%
 }
 
 .bannerList li:nth-child(2) {
