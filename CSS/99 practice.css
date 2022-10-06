@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#header {
+  background-color: gray;
+  position: relative;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  height: 40px;
+}
+
+#Logo {
+  font-size: 1.4rem;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  text-decoration: none;
+}
+
+.yes {
+  position: absolute;
+  right: 10px;
+  list-style: none;
+  display: flex;
+  transform: translateY(50%);
+}
+
+#gnbList {
+  display: flex;
+  list-style: none;
+  text-decoration: none;
+}
+
+#gnbList li {
+  width: 100px;
+  text-align: center;
+}
+
+#gnbList li a {
+  display: flex;
+  text-decoration: none;
+  padding: 5px;
+}
+
+#gnbList li a:hover {
+  background-color: black;
+  color: white;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+#cat {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+  margin-bottom: 20px;
+}
+
+.inner {
+  display: flex;
+  justify-content: center;
+}
+
+.inner div:hover img {
+  height: 120%;
+}
+
+.box {
+  width: 150px;
+  height: 200px;
+  border: 3px solid black;
+  overflow: hidden;
+}
+
+img {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+}
+
+.inner :nth-child(2) {
+  margin: 0 10px;
+}
+
+/*
+.bannerList li {
+    width: 200px
+    height
+}
+*/
